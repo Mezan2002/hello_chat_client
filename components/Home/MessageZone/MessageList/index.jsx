@@ -2,7 +2,7 @@ import React from "react";
 import { BsPlus } from "react-icons/bs";
 import { IoEllipsisHorizontal } from "react-icons/io5";
 import { FiSearch } from "react-icons/fi";
-import MessageCard from "./MessageCard/MessageCard";
+import MessageCard from "@/components/Home/MessageZone/MessageList/MessageCard/MessageCard";
 
 const MessageList = () => {
   return (
@@ -10,7 +10,7 @@ const MessageList = () => {
       {/* message list top */}
       <div>
         <button className="p-5 rounded-2xl bg-slate-100 w-full flex items-center gap-6 uppercase text-sm font-semibold">
-          <p className="p-0.5 bg-slate-300 rounded-full h-6 w-6 flex items-center justify-center">
+          <p className="p-0.5 bg-slate-300 rounded-full h-8 w-8 flex items-center justify-center">
             <BsPlus size={30} className="font-semibold" />
           </p>
           create new
@@ -34,8 +34,10 @@ const MessageList = () => {
       </div>
 
       {/* message list */}
-      <div className="mt-5">
-        <MessageCard />
+      <div className="mt-5 min-h-[68vh] max-h-[68vh] overflow-y-auto overflow-hidden no-scrollbar">
+        {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item) => (
+          <MessageCard key={item} />
+        ))}
       </div>
     </div>
   );

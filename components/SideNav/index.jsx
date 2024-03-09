@@ -19,11 +19,17 @@ const SideNav = () => {
         className=""
       />
       <div className="-mt-16">
-        <IoChatbubbleEllipsesOutline size={30} className="text-black mb-10" />
-        <IoCallOutline size={30} className="text-black mb-10" />
-        <IoMailOutline size={30} className="text-black mb-10" />
-        <HiOutlineUserGroup size={30} className="text-black mb-10" />
-        <BsGear size={30} className="text-black" />
+        <IoChatbubbleEllipsesOutline
+          size={30}
+          className="text-black mb-10 cursor-pointer"
+        />
+        <IoCallOutline size={30} className="text-black mb-10 cursor-pointer" />
+        <IoMailOutline size={30} className="text-black mb-10 cursor-pointer" />
+        <HiOutlineUserGroup
+          size={30}
+          className="text-black mb-10 cursor-pointer"
+        />
+        <BsGear size={30} className="text-black cursor-pointer" />
       </div>
       <div>
         <Image
