@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { Avatar } from "@/helpers/ui";
+import { DoubleCheckIcon } from "@/helpers/ui/CustomSvg";
 
 const MessageCard = () => {
   return (
@@ -13,8 +14,9 @@ const MessageCard = () => {
           <h5 className="text-base font-bold">Mezanur Rahman</h5>
           <p className="text-sm font-medium text-regular-soft">Hello world</p>
         </div>
-        <div>
+        <div className="flex flex-col items-end">
           <p>10:30pm</p>
+          <DoubleCheckIcon />
         </div>
       </div>
     </div>
