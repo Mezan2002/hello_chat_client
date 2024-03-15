@@ -13,7 +13,7 @@ import { HiPlusCircle } from "react-icons/hi2";
 
 const MessageConent = () => {
   return (
-    <div className="pt-5 pr-2 pl-5">
+    <div className="p-5">
       <div className="flex items-center justify-between pb-5">
         <div className="flex items-center gap-3 max-w-full">
           <Image
@@ -35,13 +35,13 @@ const MessageConent = () => {
           <IoInformationCircle size={30} className="cursor-pointer" />
         </div>
       </div>
-      <div className="min-h-[75vh] max-h-[75vh]">
+      <div className="min-h-[78vh] max-h-[78vh]">
         <Messages />
         <Messages isReply />
         <div className="flex items-center gap-2 mt-5">
-          <div className="w-1/2 h-0.5 bg-blue-light" />
+          <div className="w-1/2 h-[1px] bg-regular-soft" />
           <p className="text-xs font-semibold uppercase">today</p>
-          <div className="w-1/2 h-0.5 bg-blue-light" />
+          <div className="w-1/2 h-[1px] bg-regular-soft" />
         </div>
       </div>
 

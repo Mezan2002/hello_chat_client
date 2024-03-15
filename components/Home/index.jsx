@@ -5,17 +5,17 @@ import MessageZone from "@/components/Home/MessageZone/index";
 
 const MessageHome = () => {
   return (
-    <section className="bg-blue-light h-screen">
+    <section className="h-screen">
       <div className="flex items-start flex-1">
-        <div className="w-[5%] h-screen">
+        <div className="w-[5%] h-screen border-r border-gray-300 border-t">
           <SideNav />
         </div>
         <div className="w-[95%] h-screen">
-          <div className="grid grid-cols-12 gap-3 py-3 pr-3 h-screen">
-            <div className="col-span-10 bg-blue-softLight rounded-3xl">
+          <div className="grid grid-cols-12 h-screen">
+            <div className="col-span-10">
               <MessageZone />
             </div>
-            <div className="col-span-2 bg-bg-blue-softLight rounded-3xl">
+            <div className="col-span-2 border-l border-gray-300">
               <ProfileCard />
             </div>
           </div>

@@ -16,7 +16,7 @@ const Messages = ({ isReply = false }) => {
       />
       <div className="max-w-[70%]">
         <h6 className="text-xs font-bold mb-1">
-          Mezanur Rahman <span className="text-gray-400">04:55pm</span>{" "}
+          Mezanur Rahman <span className="text-regular-mini">04:55pm</span>{" "}
         </h6>
         <p
           className={`text-sm font-medium ${

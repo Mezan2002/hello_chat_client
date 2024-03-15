@@ -1,20 +1,21 @@
 import React from "react";
 import Image from "next/image";
+import { Avatar } from "@/helpers/ui";
 
 const MessageCard = () => {
   return (
-    <div className="flex items-center gap-3 max-w-full px-2 py-4 border-b cursor-pointer">
-      <Image
-        src="/assets/images/user1.png"
-        alt="user_avatar"
-        height={40}
-        width={40}
-        className="rounded-full object-cover h-10 w-10"
-        unoptimized
-      />
-      <div>
-        <h5 className="text-sm font-semibold">Mezanur Rahman</h5>
-        <p className="text-xs font-medium">Hello world</p>
+    <div className="flex items-center gap-3 flex-1 px-5 py-4 cursor-pointer">
+      <div className="w-[15%]">
+        <Avatar height="h-12" width="w-12" />
+      </div>
+      <div className="flex flex-1 items-start justify-between w-[85%]">
+        <div>
+          <h5 className="text-base font-bold">Mezanur Rahman</h5>
+          <p className="text-sm font-medium text-regular-soft">Hello world</p>
+        </div>
+        <div>
+          <p>10:30pm</p>
+        </div>
       </div>
     </div>
   );
