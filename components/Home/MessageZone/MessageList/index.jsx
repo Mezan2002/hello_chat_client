@@ -29,7 +29,7 @@ const MessageList = () => {
           </div>
         </div>
         {/* active now user */}
-        <div className="pt-2 pb-5">
+        <div className="pt-2">
           <div className="flex items-center justify-between">
             <p className="font-medium text-regular-soft">Online now</p>
             <span className="text-xs font-semibold text-regular-mini">
@@ -40,29 +40,31 @@ const MessageList = () => {
           <OnlineUser />
         </div>
       </div>
-      {/* pinned messages */}
-      <div>
-        <div className="flex items-center gap-2 px-5 sticky top-[23.8%] bg-white w-full">
-          <PinIcon />
-          <p className="font-medium text-regular-soft">Pinned messages</p>
-        </div>
+      <div className="relative overflow-y-auto no-scrollbar h-[75vh]">
+        {/* pinned messages */}
         <div>
-          {[0, 1, 2, 3].map((item) => (
-            <MessageCard key={item} />
-          ))}
+          <div className="flex items-center gap-2 px-5 sticky top-0 bg-white w-full">
+            <PinIcon />
+            <p className="font-medium text-regular-soft">Pinned messages</p>
+          </div>
+          <div>
+            {[0, 1, 2, 3].map((item) => (
+              <MessageCard key={item} />
+            ))}
+          </div>
         </div>
-      </div>
 
-      {/* all message list */}
-      <div>
-        <div className="flex items-center gap-2 px-5 sticky top-[23.8%] bg-white w-full">
-          <MessageFilledIcon />
-          <p className="font-medium text-regular-soft">All messages</p>
-        </div>
-        <div className="mt-5">
-          {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item) => (
-            <MessageCard key={item} />
-          ))}
+        {/* all message list */}
+        <div>
+          <div className="flex items-center gap-2 px-5 sticky top-0 bg-white w-full">
+            <MessageFilledIcon />
+            <p className="font-medium text-regular-soft">All messages</p>
+          </div>
+          <div className="mt-5">
+            {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item) => (
+              <MessageCard key={item} />
+            ))}
+          </div>
         </div>
       </div>
     </div>
