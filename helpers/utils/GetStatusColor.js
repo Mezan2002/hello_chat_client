@@ -9,6 +9,6 @@ export const getStatus = (status) => {
     case "offline":
       return "bg-regular-light";
     default:
-      return "";
+      return "bg-blue-300";
   }
 };
