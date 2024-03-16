@@ -14,7 +14,7 @@ const Avatar = ({
       alt={name}
       height={40}
       width={40}
-      className={`rounded-full object-cover 
+      className={`rounded-full z-0 object-cover 
      ${height} ${width}
       `}
       unoptimized

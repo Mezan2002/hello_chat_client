@@ -2,6 +2,7 @@
 
 import { useRef, useState, useEffect } from "react";
 import { Avatar } from "@/helpers/ui";
+import { getStatus } from "@/helpers/utils/GetStatusColor";
 
 const OnlineUser = () => {
   const containerRef = useRef(null);
@@ -56,21 +57,6 @@ const OnlineUser = () => {
       }
     };
   }, [isDragging, startX, scrollLeft]);
-
-  const getStatus = (status) => {
-    switch (status) {
-      case "online":
-        return "bg-green";
-      case "busy":
-        return "bg-red";
-      case "away":
-        return "bg-orange";
-      case "offline":
-        return "bg-regular-light";
-      default:
-        return "";
-    }
-  };
 
   return (
     <div

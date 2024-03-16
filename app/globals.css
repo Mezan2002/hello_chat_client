@@ -18,7 +18,7 @@
 
 .tooltip-text {
   position: absolute;
-  bottom: 90%;
+  top: 100%;
   left: 0;
   transform: translateX(5%);
   background-color: rgba(0, 0, 0, 0.8);

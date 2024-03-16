@@ -43,7 +43,7 @@ const MessageList = () => {
       <div className="relative overflow-y-auto no-scrollbar h-[75vh]">
         {/* pinned messages */}
         <div>
-          <div className="flex items-center gap-2 px-5 sticky top-0 bg-white w-full">
+          <div className="z-10 flex items-center gap-2 px-5 sticky top-0 bg-white w-full">
             <PinIcon />
             <p className="font-medium text-regular-soft">Pinned messages</p>
           </div>
@@ -56,7 +56,7 @@ const MessageList = () => {
 
         {/* all message list */}
         <div>
-          <div className="flex items-center gap-2 px-5 sticky top-0 bg-white w-full">
+          <div className="z-10 flex items-center gap-2 px-5 sticky top-0 bg-white w-full">
             <MessageFilledIcon />
             <p className="font-medium text-regular-soft">All messages</p>
           </div>

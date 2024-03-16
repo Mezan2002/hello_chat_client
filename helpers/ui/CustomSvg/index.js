@@ -11,3 +11,11 @@ export { default as MessageOutlineIcon } from "@/helpers/ui/CustomSvg/MessageOut
 export { default as UsersOutlineIcon } from "@/helpers/ui/CustomSvg/UsersOutlineIcon";
 export { default as SettingOutlineIcon } from "@/helpers/ui/CustomSvg/SettingOutlineIcon";
 export { default as MessageFilledIcon } from "@/helpers/ui/CustomSvg/MessageFilledIcon";
+export { default as ChatNotificationIcon } from "@/helpers/ui/CustomSvg/ChatNotificationIcon";
+export { default as ProfileUserIcon } from "@/helpers/ui/CustomSvg/ProfileUserIcon";
+export { default as PdfFileOutlineIcon } from "@/helpers/ui/CustomSvg/PdfFileOutlineIcon";
+export { default as LinkOutlineIcon } from "@/helpers/ui/CustomSvg/LinkOutlineIcon";
+export { default as VideoOutlineIcon } from "@/helpers/ui/CustomSvg/VideoOutlineIcon";
+export { default as PhotosGalleryOutlineIcon } from "@/helpers/ui/CustomSvg/PhotosGalleryOutlineIcon";
+export { default as CircleFillDownArrowIcon } from "@/helpers/ui/CustomSvg/CircleFillDownArrowIcon";
+export { default as MicOutlineIcon } from "@/helpers/ui/CustomSvg/MicOutlineIcon";

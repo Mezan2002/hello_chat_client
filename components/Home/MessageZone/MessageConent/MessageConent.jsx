@@ -1,12 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { BsCameraFill } from "react-icons/bs";
-import {
-  IoCall,
-  IoImages,
-  IoInformationCircle,
-  IoVideocam,
-} from "react-icons/io5";
+import { IoImages } from "react-icons/io5";
 import { FaPaperPlane } from "react-icons/fa6";
 import Messages from "@/components/Home/MessageZone/MessageConent/Messages/Messages";
 import { HiPlusCircle } from "react-icons/hi2";

@@ -33,7 +33,7 @@ const Tooltip = ({
       {children}
       {showTooltip && (
         <div
-          className={`tooltip-text ${tooltipPosition} ${textClassName} font-medium capitalize`}
+          className={`tooltip-text z-50 ${tooltipPosition} ${textClassName} font-medium capitalize`}
         >
           {text}
         </div>

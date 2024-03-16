@@ -9,10 +9,14 @@ module.exports = {
     extend: {
       colors: {
         // brand: "#1053f3",
-        brand: "#4621ff",
+        brand: {
+          DEFAULT: "#4621ff",
+          light: "#edebfa",
+          lighter: "#f7f5ff",
+        },
         blue: {
           light: "#c8d6ed",
-          softLight: "#e7effd",
+          softLight: "#efedfa",
         },
         regular: {
           light: "#C9C9C9",
@@ -22,11 +26,25 @@ module.exports = {
         red: {
           DEFAULT: "#FF3030",
         },
+        pink: {
+          DEFAULT: "#f56868",
+          light: "#fff5f5",
+        },
         green: {
           DEFAULT: "#22BA00",
+          light: "#f0fff4",
         },
         orange: {
           DEFAULT: "#FD9302",
+        },
+        purple: {
+          light: "#faf5ff",
+        },
+        yellow: {
+          light: "#feebc8",
+        },
+        blue: {
+          light: "#ebf8ff",
         },
         lightGrayShadow: "#F8F8FC",
       },

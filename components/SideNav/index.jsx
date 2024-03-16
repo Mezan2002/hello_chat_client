@@ -19,7 +19,7 @@ const SideNav = () => {
         height={100}
         className=""
       />
-      <div className="-mt-16 flex flex-col">
+      <div className="-mt-8 flex flex-col items-center justify-between h-[40vh]">
         {iconsData.map(({ id, title, Icon, path }) => {
           const isActive = pathName === path;
           return (
@@ -28,7 +28,7 @@ const SideNav = () => {
                 <div
                   className={`p-2 rounded-xl ${
                     isActive ? "bg-brand" : "text-black"
-                  } mb-8 cursor-pointer icon-container flex items-center justify-center`}
+                  } cursor-pointer icon-container items-center justify-center`}
                 >
                   {<Icon color={isActive ? "white" : "black"} />}
                 </div>

@@ -1,10 +1,17 @@
 import React from "react";
 
-const SearchIcon = ({ size = 20, color = "#C9C9C9" }) => (
+const SearchIcon = ({
+  size = 20,
+  color = "#C9C9C9",
+  isStroke = false,
+  strokeWidth = 1,
+}) => (
   <svg
     fill={color}
     height={size}
     width={size}
+    stroke={isStroke ? color : ""}
+    strokeWidth={strokeWidth}
     viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"
   >
