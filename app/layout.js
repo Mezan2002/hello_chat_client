@@ -1,3 +1,4 @@
+import { NextUIProvider } from "@nextui-org/react";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import SideNav from "@/components/SideNav";

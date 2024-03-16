@@ -1,5 +1,6 @@
+"use client";
+
 import React from "react";
-import SideNav from "@/components/SideNav";
 import ProfileCard from "@/components/Home/ProfileCard/ProfileCard";
 import MessageZone from "@/components/Home/MessageZone/index";
 
