@@ -3,10 +3,7 @@
 import { useRef, useState, useEffect } from "react";
 
 const HorizontalScrollContainer = ({ children }) => {
-  const containerRef = useRef(null);
-  const [isDragging, setIsDragging] = useState(false);
-  const [startX, setStartX] = useState(0);
-  const [scrollLeft, setScrollLeft] = useState(0);
+  
 
   useEffect(() => {
     const container = containerRef.current;

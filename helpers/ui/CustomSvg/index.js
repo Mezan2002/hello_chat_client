@@ -10,3 +10,4 @@ export { default as MailOutlineIcon } from "@/helpers/ui/CustomSvg/MailOutlineIc
 export { default as MessageOutlineIcon } from "@/helpers/ui/CustomSvg/MessageOutlineIcon";
 export { default as UsersOutlineIcon } from "@/helpers/ui/CustomSvg/UsersOutlineIcon";
 export { default as SettingOutlineIcon } from "@/helpers/ui/CustomSvg/SettingOutlineIcon";
+export { default as MessageFilledIcon } from "@/helpers/ui/CustomSvg/MessageFilledIcon";

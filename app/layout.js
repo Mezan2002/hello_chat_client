@@ -16,11 +16,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="flex items-start flex-1">
+        <div className="flex items-start flex-1 min-h-screen">
           <div className="w-[5%] h-screen border-r border-gray-300">
             <SideNav />
           </div>
-          <div className="w-[95%] h-screen">{children}</div>
+          <div className="w-[95%] h-screen overflow-auto">{children}</div>
         </div>
       </body>
     </html>
