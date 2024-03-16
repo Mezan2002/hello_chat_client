@@ -13,7 +13,9 @@ const Avatar = ({
       alt={name}
       height={40}
       width={40}
-      className={`rounded-full object-cover h-${size} w-${size}`}
+      className={`rounded-full object-cover 
+      h-${size} w-${size}
+      `}
       unoptimized
       draggable="false"
     />
