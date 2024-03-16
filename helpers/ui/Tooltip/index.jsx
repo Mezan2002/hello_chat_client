@@ -2,7 +2,12 @@
 
 import React, { useState } from "react";
 
-const Tooltip = ({ text, children }) => {
+const Tooltip = ({
+  text = "give me a icon text",
+  children,
+  containerClassName = "",
+  textClassName = "",
+}) => {
   let timeoutId;
 
   const [showTooltip, setShowTooltip] = useState(false);
@@ -20,12 +25,16 @@ const Tooltip = ({ text, children }) => {
 
   return (
     <div
-      className="tooltip-container"
+      className={`tooltip-container cursor-pointer ${containerClassName}`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
       {children}
-      {showTooltip && <div className="tooltip-text">{text}</div>}
+      {showTooltip && (
+        <div className={`tooltip-text ${textClassName} font-medium capitalize`}>
+          {text}
+        </div>
+      )}
     </div>
   );
 };

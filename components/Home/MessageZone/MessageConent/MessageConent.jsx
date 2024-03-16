@@ -10,7 +10,12 @@ import {
 import { FaPaperPlane } from "react-icons/fa6";
 import Messages from "@/components/Home/MessageZone/MessageConent/Messages/Messages";
 import { HiPlusCircle } from "react-icons/hi2";
-import AudioCallIcon from "@/helpers/ui/CustomSvg/AudioCallIcon";
+import {
+  AudioCallIcon,
+  MoreInfoIcon,
+  VideoCallIcon,
+} from "@/helpers/ui/CustomSvg";
+import { Tooltip } from "@/helpers/ui";
 
 const MessageConent = () => {
   return (
@@ -30,10 +35,16 @@ const MessageConent = () => {
             <p className="text-xs font-medium">Active</p>
           </div>
         </div>
-        <div className="flex items-center gap-8">
-          <AudioCallIcon />
-          <IoVideocam size={30} className="cursor-pointer" />
-          <IoInformationCircle size={30} className="cursor-pointer" />
+        <div className="flex items-center gap-5">
+          <Tooltip text="Audio call">
+            <AudioCallIcon />
+          </Tooltip>
+          <Tooltip text="Video call">
+            <VideoCallIcon size={30} />
+          </Tooltip>
+          <Tooltip text="More">
+            <MoreInfoIcon />
+          </Tooltip>
         </div>
       </div>
       <div className="min-h-[78vh] max-h-[78vh]">
