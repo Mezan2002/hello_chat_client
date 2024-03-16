@@ -1,5 +1,6 @@
 import { Montserrat } from "next/font/google";
 import "./globals.css";
+import SideNav from "@/components/SideNav";
 
 const inter = Montserrat({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -14,7 +15,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="flex items-start flex-1">
+          <div className="w-[5%] h-screen border-r border-gray-300">
+            <SideNav />
+          </div>
+          <div className="w-[95%] h-screen">{children}</div>
+        </div>
+      </body>
     </html>
   );
 }

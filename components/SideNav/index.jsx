@@ -1,15 +1,15 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
-import {
-  IoCallOutline,
-  IoChatbubbleEllipsesOutline,
-  IoMailOutline,
-} from "react-icons/io5";
-import { HiOutlineUserGroup } from "react-icons/hi2";
-import { BsGear } from "react-icons/bs";
-import { Avatar } from "@/helpers/ui";
+import { Avatar, Tooltip } from "@/helpers/ui";
+import { iconsData } from "./helpers/uiData";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const SideNav = () => {
+  const pathName = usePathname();
+
   return (
     <div className="flex flex-col items-center justify-between h-full pb-8">
       <Image
@@ -19,22 +19,23 @@ const SideNav = () => {
         height={100}
         className=""
       />
-      <div className="-mt-16">
-        <p className="p-1.5 rounded-xl bg-brand mb-8 cursor-pointer">
-          <IoChatbubbleEllipsesOutline size={25} className="text-white" />
-        </p>
-        <p className="p-1.5 rounded-xl mb-8 cursor-pointer">
-          <IoCallOutline size={25} className="text-black" />
-        </p>
-        <p className="p-1.5 rounded-xl mb-8 cursor-pointer">
-          <IoMailOutline size={25} className="text-black" />
-        </p>
-        <p className="p-1.5 rounded-xl mb-8 cursor-pointer">
-          <HiOutlineUserGroup size={25} className="text-black" />
-        </p>
-        <p className="p-1.5 rounded-xl cursor-pointer">
-          <BsGear size={25} className="text-black" />
-        </p>
+      <div className="-mt-16 flex flex-col">
+        {iconsData.map(({ id, title, Icon, path }) => {
+          const isActive = pathName === path;
+          return (
+            <Link key={id} href={path}>
+              <Tooltip text={title}>
+                <div
+                  className={`p-2 rounded-xl ${
+                    isActive ? "bg-brand" : "text-black"
+                  } mb-8 cursor-pointer icon-container flex items-center justify-center`}
+                >
+                  {<Icon color={isActive ? "white" : "black"} />}
+                </div>
+              </Tooltip>
+            </Link>
+          );
+        })}
       </div>
       <div>
         <Avatar />

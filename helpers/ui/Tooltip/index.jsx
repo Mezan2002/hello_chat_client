@@ -7,6 +7,7 @@ const Tooltip = ({
   children,
   containerClassName = "",
   textClassName = "",
+  tooltipPosition = "top-[80%]",
 }) => {
   let timeoutId;
 
@@ -31,7 +32,9 @@ const Tooltip = ({
     >
       {children}
       {showTooltip && (
-        <div className={`tooltip-text ${textClassName} font-medium capitalize`}>
+        <div
+          className={`tooltip-text ${tooltipPosition} ${textClassName} font-medium capitalize`}
+        >
           {text}
         </div>
       )}

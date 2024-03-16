@@ -40,7 +40,7 @@ const MessageConent = () => {
             <AudioCallIcon />
           </Tooltip>
           <Tooltip text="Video call">
-            <VideoCallIcon size={30} />
+            <VideoCallIcon size={28} />
           </Tooltip>
           <Tooltip text="More">
             <MoreInfoIcon />
