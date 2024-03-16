@@ -3,7 +3,8 @@ import React from "react";
 
 const Avatar = ({
   type,
-  size = 10,
+  width = "w-10",
+  height = "h-10",
   src = "/assets/images/user1.png",
   name = "user_avatar",
 }) => {
@@ -14,7 +15,7 @@ const Avatar = ({
       height={40}
       width={40}
       className={`rounded-full object-cover 
-      h-${size} w-${size}
+     ${height} ${width}
       `}
       unoptimized
       draggable="false"

@@ -81,7 +81,7 @@ const OnlineUser = () => {
       {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item) => (
         <div key={item} className="flex-shrink-0 cursor-pointer">
           <div className="relative" style={{ userSelect: "none" }}>
-            <Avatar size={14} />
+            <Avatar height="h-14" width="w-14" />
             <div
               className={`h-4 w-4 border-2 border-white z-50 rounded-full absolute bottom-0 right-0 
           ${getStatus("online")}`}

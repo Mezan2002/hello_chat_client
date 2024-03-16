@@ -5,7 +5,7 @@ import { DoubleCheckIcon } from "@/helpers/ui/CustomSvg";
 
 const MessageCard = () => {
   return (
-    <div className="flex items-center flex-1 px-5 py-4 cursor-pointer">
+    <div className="flex items-center gap-1.5 flex-1 px-5 py-4 cursor-pointer">
       <div className="w-[15%]">
         <Avatar height="h-12" width="w-12" />
       </div>
