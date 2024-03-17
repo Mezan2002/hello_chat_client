@@ -1,18 +1,24 @@
 import React from "react";
-import { Avatar } from "@/helpers/ui";
 import { DoubleCheckIcon } from "@/helpers/ui/CustomSvg";
-import { getStatus } from "@/helpers/utils/GetStatusColor";
+import { Avatar, Badge } from "@nextui-org/react";
 
 const MessageCard = () => {
   return (
     <div className="flex items-center gap-1.5 flex-1 px-5 py-4 cursor-pointer">
       <div className="w-[15%]">
-        <div className="relative z-0">
-          <Avatar height="h-12" width="w-12" />
-          <div
-            className={`h-4 w-4 border-2 border-white rounded-full absolute bottom-0 right-0 
-          ${getStatus("online")}`}
-          />
+        <div className="z-0">
+          <Badge
+            content=""
+            color="success"
+            shape="circle"
+            placement="bottom-right"
+          >
+            <Avatar
+              radius="full"
+              className="w-12 h-12"
+              src="https://i.pravatar.cc/150?u=a04258a2462d826712d"
+            />
+          </Badge>
         </div>
       </div>
       <div className="flex flex-1 items-start justify-between w-[85%]">

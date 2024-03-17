@@ -19,3 +19,4 @@ export { default as VideoOutlineIcon } from "@/helpers/ui/CustomSvg/VideoOutline
 export { default as PhotosGalleryOutlineIcon } from "@/helpers/ui/CustomSvg/PhotosGalleryOutlineIcon";
 export { default as CircleFillDownArrowIcon } from "@/helpers/ui/CustomSvg/CircleFillDownArrowIcon";
 export { default as MicOutlineIcon } from "@/helpers/ui/CustomSvg/MicOutlineIcon";
+export { default as DeleteOutlineIcon } from "@/helpers/ui/CustomSvg/DeleteOutlineIcon";

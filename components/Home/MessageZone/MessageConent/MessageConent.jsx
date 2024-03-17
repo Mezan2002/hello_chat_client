@@ -10,36 +10,26 @@ import {
   MoreInfoIcon,
   VideoCallIcon,
 } from "@/helpers/ui/CustomSvg";
-import { Tooltip } from "@/helpers/ui";
+import { Avatar, Tooltip } from "@nextui-org/react";
 
 const MessageConent = () => {
   return (
     <div className="p-5">
       <div className="flex items-center justify-between pb-5">
         <div className="flex items-center gap-3 max-w-full">
-          <Image
-            src="/assets/images/user1.png"
-            alt="user_avatar"
-            height={48}
-            width={48}
-            className="rounded-full object-cover h-12 w-12"
-            unoptimized
-          />
+          <Avatar src="/assets/images/user1.png" className="w-12 h-12" />
           <div>
             <h5 className="text-lg font-semibold">Mezanur Rahman</h5>
-            <p className="text-xs font-medium">Active</p>
+            <div className="flex items-center flex-1 gap-1">
+              <div className="h-2 w-2 bg-green rounded-full" />
+              <p className="text-xs font-semibold">Active</p>
+            </div>
           </div>
         </div>
         <div className="flex items-center gap-5">
-          <Tooltip text="Audio call">
-            <AudioCallIcon />
-          </Tooltip>
-          <Tooltip text="Video call">
-            <VideoCallIcon size={28} />
-          </Tooltip>
-          <Tooltip text="More">
-            <MoreInfoIcon />
-          </Tooltip>
+          <AudioCallIcon />
+          <VideoCallIcon size={28} />
+          <MoreInfoIcon />
         </div>
       </div>
       <div className="min-h-[78vh] max-h-[78vh]">

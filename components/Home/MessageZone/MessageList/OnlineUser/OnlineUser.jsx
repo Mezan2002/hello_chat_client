@@ -1,16 +1,13 @@
 "use client";
 
+import { Avatar, Badge } from "@nextui-org/react";
 import { useRef, useState, useEffect } from "react";
-import { Avatar } from "@/helpers/ui";
-import { getStatus } from "@/helpers/utils/GetStatusColor";
 
 const OnlineUser = () => {
   const containerRef = useRef(null);
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
-  const [statusColor, setStatusColor] = useState("");
-  console.log("🚀 ~ OnlineUser ~ statusColor:", statusColor);
 
   useEffect(() => {
     const container = containerRef.current;
@@ -60,12 +57,6 @@ const OnlineUser = () => {
     };
   }, [isDragging, startX, scrollLeft]);
 
-  useEffect(() => {
-    const color = getStatus("online");
-    console.log("🚀 ~ useEffect ~ color:", color);
-    setStatusColor(color);
-  }, [getStatus]);
-
   return (
     <div
       ref={containerRef}
@@ -74,14 +65,18 @@ const OnlineUser = () => {
     >
       {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item) => (
         <div key={item} className="flex-shrink-0 cursor-pointer">
-          <div className="relative" style={{ userSelect: "none" }}>
-            <Avatar height="h-14" width="w-14" />
-            <div
-              className={`h-4 w-4 border-2 border-white z-50 rounded-full absolute bottom-0 right-0 ${getStatus(
-                "online"
-              )}`}
+          <Badge
+            content=""
+            color="success"
+            shape="circle"
+            placement="bottom-right"
+          >
+            <Avatar
+              radius="full"
+              size="lg"
+              src="https://i.pravatar.cc/150?u=a04258a2462d826712d"
             />
-          </div>
+          </Badge>
         </div>
       ))}
     </div>

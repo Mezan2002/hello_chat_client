@@ -2,10 +2,10 @@
 
 import React from "react";
 import Image from "next/image";
-import { Avatar, Tooltip } from "@/helpers/ui";
 import { iconsData } from "./helpers/uiData";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Avatar, Tooltip } from "@nextui-org/react";
 
 const SideNav = () => {
   const pathName = usePathname();
@@ -24,7 +24,7 @@ const SideNav = () => {
           const isActive = pathName === path;
           return (
             <Link key={id} href={path}>
-              <Tooltip text={title}>
+              <Tooltip placement="right" content={title}>
                 <div
                   className={`p-2 rounded-xl ${
                     isActive ? "bg-brand" : "text-black"
@@ -38,7 +38,10 @@ const SideNav = () => {
         })}
       </div>
       <div>
-        <Avatar />
+        <Avatar
+          radius="full"
+          src="https://i.pravatar.cc/150?u=a04258a2462d826712d"
+        />
       </div>
     </div>
   );

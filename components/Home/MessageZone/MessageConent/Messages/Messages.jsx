@@ -1,19 +1,13 @@
 import React from "react";
 import Image from "next/image";
+import { Avatar } from "@nextui-org/react";
 
 const Messages = ({ isReply = false, isTyping = false }) => {
   return (
     <div
       className={`flex ${isReply ? "flex-row-reverse" : ""} items-start gap-3`}
     >
-      <Image
-        src="/assets/images/user1.png"
-        alt="user_avatar"
-        height={32}
-        width={32}
-        className="rounded-full object-cover h-8 w-8"
-        unoptimized
-      />
+      <Avatar src="/assets/images/user1.png" className="w-8 h-8" />
       {isTyping ? (
         <div
           className={`px-5 py-2 flex items-center ${
