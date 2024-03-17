@@ -56,3 +56,15 @@
   width: 100%; /* Make sure the SVG fills its container */
   height: 100%; /* Make sure the SVG fills its container */
 }
+.bg-green {
+  background-color: #22ba00;
+}
+.bg-orange {
+  background-color: #fd9302;
+}
+.bg-red {
+  background-color: #ff3030;
+}
+.bg-regular-light {
+  background-color: #c9c9c9;
+}

@@ -9,6 +9,8 @@ const OnlineUser = () => {
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
+  const [statusColor, setStatusColor] = useState("");
+  console.log("🚀 ~ OnlineUser ~ statusColor:", statusColor);
 
   useEffect(() => {
     const container = containerRef.current;
@@ -58,6 +60,12 @@ const OnlineUser = () => {
     };
   }, [isDragging, startX, scrollLeft]);
 
+  useEffect(() => {
+    const color = getStatus("online");
+    console.log("🚀 ~ useEffect ~ color:", color);
+    setStatusColor(color);
+  }, [getStatus]);
+
   return (
     <div
       ref={containerRef}
@@ -69,8 +77,9 @@ const OnlineUser = () => {
           <div className="relative" style={{ userSelect: "none" }}>
             <Avatar height="h-14" width="w-14" />
             <div
-              className={`h-4 w-4 border-2 border-white z-50 rounded-full absolute bottom-0 right-0 
-          ${getStatus("online")}`}
+              className={`h-4 w-4 border-2 border-white z-50 rounded-full absolute bottom-0 right-0 ${getStatus(
+                "online"
+              )}`}
             />
           </div>
         </div>
