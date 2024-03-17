@@ -39,12 +39,10 @@ module.exports = {
         },
         orange: {
           DEFAULT: "#FD9302",
+          light: "#feebc8",
         },
         purple: {
           light: "#faf5ff",
-        },
-        yellow: {
-          light: "#feebc8",
         },
         blue: {
           light: "#ebf8ff",

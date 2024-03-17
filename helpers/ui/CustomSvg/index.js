@@ -20,3 +20,15 @@ export { default as PhotosGalleryOutlineIcon } from "@/helpers/ui/CustomSvg/Phot
 export { default as CircleFillDownArrowIcon } from "@/helpers/ui/CustomSvg/CircleFillDownArrowIcon";
 export { default as MicOutlineIcon } from "@/helpers/ui/CustomSvg/MicOutlineIcon";
 export { default as DeleteOutlineIcon } from "@/helpers/ui/CustomSvg/DeleteOutlineIcon";
+export { default as BlockUserIcon } from "@/helpers/ui/CustomSvg/BlockUserIcon";
+export { default as NotificationOnOutlineIcon } from "@/helpers/ui/CustomSvg/NotificationOnOutlineIcon";
+export { default as NotificationOffOutlineIcon } from "@/helpers/ui/CustomSvg/NotificationOffOutlineIcon";
+export { default as ReportUserOutlineIcon } from "@/helpers/ui/CustomSvg/ReportUserOutlineIcon";
+export { default as CreateGroupIcon } from "@/helpers/ui/CustomSvg/CreateGroupIcon";
+export { default as HelpOutlineIcon } from "@/helpers/ui/CustomSvg/HelpOutlineIcon";
+export { default as FeedbackOutlineIcon } from "@/helpers/ui/CustomSvg/FeedbackOutlineIcon";
+export { default as LogoutOutlineIcon } from "@/helpers/ui/CustomSvg/LogoutOutlineIcon";
+export { default as PaperPlaneFillIcon } from "@/helpers/ui/CustomSvg/PaperPlaneFillIcon";
+export { default as PlusFillIcon } from "@/helpers/ui/CustomSvg/PlusFillIcon";
+export { default as CameraFillIcon } from "@/helpers/ui/CustomSvg/CameraFillIcon";
+export { default as GalleryFillIcon } from "@/helpers/ui/CustomSvg/GalleryFillIcon";

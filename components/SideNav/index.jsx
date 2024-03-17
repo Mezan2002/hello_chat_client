@@ -5,7 +5,14 @@ import Image from "next/image";
 import { iconsData } from "./helpers/uiData";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Avatar, Tooltip } from "@nextui-org/react";
+import {
+  Avatar,
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+  Tooltip,
+} from "@nextui-org/react";
+import UserInfoCard from "./UserInfoCard";
 
 const SideNav = () => {
   const pathName = usePathname();
@@ -37,11 +44,18 @@ const SideNav = () => {
           );
         })}
       </div>
-      <div>
-        <Avatar
-          radius="full"
-          src="https://i.pravatar.cc/150?u=a04258a2462d826712d"
-        />
+      <div className="cursor-pointer">
+        <Popover showArrow placement="right-end">
+          <PopoverTrigger>
+            <Avatar
+              radius="full"
+              src="https://i.pravatar.cc/150?u=a04258a2462d826712d"
+            />
+          </PopoverTrigger>
+          <PopoverContent className="p-1">
+            <UserInfoCard />
+          </PopoverContent>
+        </Popover>
       </div>
     </div>
   );

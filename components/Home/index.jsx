@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import ProfileCard from "@/components/Home/ProfileCard/ProfileCard";
+import ProfileCard from "@/components/Home/ProfileCard";
 import MessageZone from "@/components/Home/MessageZone/index";
 
 const MessageHome = () => {
