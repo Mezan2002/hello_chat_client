@@ -9,6 +9,7 @@ import {
   NotificationOffOutlineIcon,
   PdfFileOutlineIcon,
   PhotosGalleryOutlineIcon,
+  ProfileUserIcon,
   ReportUserOutlineIcon,
   SearchIcon,
   VideoOutlineIcon,
@@ -63,24 +64,30 @@ export const sharedLinksItem = [
 export const moreActionsItem = [
   {
     id: 1,
+    Icon: <ProfileUserIcon color="gray" />,
+    title: "View Profile",
+    action: "view_profile",
+  },
+  {
+    id: 2,
     Icon: <SearchIcon color="gray" />,
     title: "Search in Conversation",
     action: "search",
   },
   {
-    id: 2,
+    id: 3,
     Icon: <NotificationOffOutlineIcon color="gray" />,
     title: "Turn off notifications",
     action: "turn_off_notifications",
   },
   {
-    id: 3,
+    id: 4,
     Icon: <CreateGroupIcon color="gray" />,
     title: "Create a group with Mezanur",
-    action: "delete",
+    action: "create_group",
   },
   {
-    id: 3,
+    id: 5,
     Icon: <DeleteOutlineIcon color="gray" />,
     title: "Delete Conversation",
     action: "delete",

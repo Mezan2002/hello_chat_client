@@ -7,16 +7,12 @@ import {
 import CoverImage from "@/helpers/ui/CustomSvg/CoverImage";
 import {
   Avatar,
-  Badge,
   Button,
   Card,
   CardBody,
   CardFooter,
   CardHeader,
-  Divider,
 } from "@nextui-org/react";
-import Image from "next/image";
-import React, { useState } from "react";
 
 const UserInfoCard = () => {
   return (
@@ -29,7 +25,7 @@ const UserInfoCard = () => {
           <Avatar
             className="w-36 h-36 text-large"
             radius="full"
-            src="https://i.pravatar.cc/150?u=a04258a2462d826712d"
+            src="/assets/images/user.jpg"
           />
 
           <div className="flex flex-1 items-center justify-between">
@@ -62,6 +58,11 @@ const UserInfoCard = () => {
           laborum rerum doloremque animi quibusdam consequuntur dolores vel,
           vitae odit voluptatem expedita maiores.
         </p>
+        <div className="my-5">
+          <Button className="bg-brand text-white" fullWidth>
+            View Profile
+          </Button>
+        </div>
       </CardBody>
       <CardFooter className="gap-3">
         <div className="flex gap-1">

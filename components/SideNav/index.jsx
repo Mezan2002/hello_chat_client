@@ -47,10 +47,7 @@ const SideNav = () => {
       <div className="cursor-pointer">
         <Popover showArrow placement="right-end">
           <PopoverTrigger>
-            <Avatar
-              radius="full"
-              src="https://i.pravatar.cc/150?u=a04258a2462d826712d"
-            />
+            <Avatar radius="full" src="/assets/images/user.jpg" />
           </PopoverTrigger>
           <PopoverContent className="p-1">
             <UserInfoCard />

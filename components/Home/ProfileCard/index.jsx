@@ -2,7 +2,13 @@ import {
   NotificationOffOutlineIcon,
   NotificationOnOutlineIcon,
 } from "@/helpers/ui/CustomSvg";
-import { Accordion, AccordionItem, Avatar, Badge } from "@nextui-org/react";
+import {
+  Accordion,
+  AccordionItem,
+  Avatar,
+  Badge,
+  Button,
+} from "@nextui-org/react";
 import {
   moreActionsItem,
   privaryAndSupportItem,
@@ -30,7 +36,7 @@ const ProfileCard = () => {
           <Avatar
             className="w-20 h-20 text-large"
             radius="full"
-            src="https://i.pravatar.cc/150?u=a04258a2462d826712d"
+            src="/assets/images/user.jpg"
           />
         </Badge>
         <h4 className="text-2xl font-semibold mt-3 capitalize">Harry Porter</h4>
