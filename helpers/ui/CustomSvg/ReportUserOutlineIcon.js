@@ -1,14 +1,12 @@
-import React from "react";
-
 const ReportUserOutlineIcon = ({ size = 20, color = "#C9C9C9" }) => (
   <svg
     fill={color}
     height={size}
     width={size}
-    clip-rule="evenodd"
-    fill-rule="evenodd"
-    stroke-linejoin="round"
-    stroke-miterlimit="2"
+    clipRule="evenodd"
+    fillRule="evenodd"
+    strokeLinejoin="round"
+    strokeMiterlimit="2"
     viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"
     id="fi_9720868"

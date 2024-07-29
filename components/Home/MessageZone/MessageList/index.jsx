@@ -1,11 +1,11 @@
 import MessageCard from "@/components/Home/MessageZone/MessageList/MessageCard/MessageCard";
+import OnlineUser from "@/components/Home/MessageZone/MessageList/OnlineUser/OnlineUser";
 import {
   EditIcon,
   MessageFilledIcon,
   PinIcon,
   SearchIcon,
 } from "@/helpers/ui/CustomSvg";
-import OnlineUser from "@/components/Home/MessageZone/MessageList/OnlineUser/OnlineUser";
 import { Tooltip } from "@nextui-org/react";
 
 const MessageList = () => {

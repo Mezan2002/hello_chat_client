@@ -1,8 +1,7 @@
-import React from "react";
-import Image from "next/image";
 import { Avatar } from "@nextui-org/react";
+import Image from "next/image";
 
-const Messages = ({ isReply = false, isTyping = false }) => {
+const Messages = ({ isReply = false, isTyping = false, message }) => {
   return (
     <div
       className={`flex ${isReply ? "flex-row-reverse" : ""} items-start gap-3`}
@@ -45,7 +44,7 @@ const Messages = ({ isReply = false, isTyping = false }) => {
               isReply ? "rounded-tl-3xl" : "rounded-tr-3xl"
             } p-5 mb-1`}
           >
-            Hello world...
+            {message}
           </p>
         </div>
       )}

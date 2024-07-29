@@ -1,4 +1,3 @@
-import React from "react";
 import MessageContent from "@/components/Home/MessageZone/MessageConent/MessageConent";
 import MessageList from "@/components/Home/MessageZone/MessageList/index";
 

@@ -1,12 +1,10 @@
-import React from "react";
-
 const DoubleCheckIcon = ({ size = 20, color = "#C9C9C9" }) => (
   <svg
     fill={color}
     height={size}
     width={size}
     id="Layer_1"
-    enable-background="new 0 0 28 28"
+    enableBackground="new 0 0 28 28"
     viewBox="0 0 28 28"
     xmlns="http://www.w3.org/2000/svg"
   >

@@ -1,9 +1,7 @@
 "use client";
 
-import React from "react";
-import ProfileCard from "@/components/Home/ProfileCard";
 import MessageZone from "@/components/Home/MessageZone/index";
-import ChatComponent from "./TestingSocket/ChatComponent";
+import ProfileCard from "@/components/Home/ProfileCard";
 
 const MessageHome = () => {
   return (
@@ -15,7 +13,6 @@ const MessageHome = () => {
         <div className="col-span-2 border-l border-gray-300">
           <ProfileCard />
         </div>
-        {/* <ChatComponent /> */}
       </div>
     </section>
   );
